@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="450.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinemabookingsystem.controllers.MoviesController">
+   <children>
+      <ScrollPane fx:id="scrollPane" layoutY="48.0" prefHeight="450.0" prefWidth="768.0" style="-fx-background-color: #000000;">
+         <AnchorPane prefHeight="550.0" prefWidth="753.0">
+            <Pane layoutY="-2.0" prefHeight="650.0" prefWidth="753.0" style="-fx-background-color: #000000;">
+               <children>
+                  <GridPane fx:id="movieTitles1" layoutX="54.0" layoutY="325.0" prefHeight="245.0" prefWidth="650.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="203.0" minHeight="10.0" prefHeight="200.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="132.0" minHeight="0.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Pane maxWidth="-Infinity" prefHeight="200.0" prefWidth="125.0" style="-fx-border-color: #ffffff; -fx-border-width: 0.1; -fx-border-radius: 5;" />
+                        <Pane maxWidth="-Infinity" prefHeight="200.0" prefWidth="125.0" style="-fx-border-color: #ffffff; -fx-border-width: 0.1; -fx-border-radius: 5;" GridPane.columnIndex="1" />
+                        <Pane maxWidth="-Infinity" prefHeight="200.0" prefWidth="125.0" style="-fx-border-color: #ffffff; -fx-border-width: 0.1; -fx-border-radius: 5;" GridPane.columnIndex="2" />
+                        <Pane maxWidth="-Infinity" prefHeight="200.0" prefWidth="125.0" style="-fx-border-color: #ffffff; -fx-border-width: 0.1; -fx-border-radius: 5;" GridPane.columnIndex="3" />
+                        <Pane maxWidth="-Infinity" prefHeight="200.0" prefWidth="125.0" style="-fx-border-color: #ffffff; -fx-border-width: 0.1; -fx-border-radius: 5;" GridPane.columnIndex="4" />
+                        <ImageView fx:id="sixthPoster" fitHeight="200.0" fitWidth="125.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></ImageView>
+                        <ImageView fx:id="seventhPoster" fitHeight="200.0" fitWidth="125.0" GridPane.columnIndex="1">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></ImageView>
+                        <ImageView fx:id="eightPoster" fitHeight="200.0" fitWidth="125.0" GridPane.columnIndex="2">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></ImageView>
+                        <ImageView fx:id="ninthPoster" fitHeight="200.0" fitWidth="125.0" GridPane.columnIndex="3">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></ImageView>
+                        <ImageView fx:id="tenthPoster" fitHeight="200.0" fitWidth="125.0" GridPane.columnIndex="4">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></ImageView>
+                        <Text fx:id="movie6" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="115.0" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets top="5.0" />
+                           </GridPane.margin>
+                        </Text>
+                        <Text fx:id="movie7" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="115.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets top="5.0" />
+                           </GridPane.margin>
+                        </Text>
+                        <Text fx:id="movie8" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="115.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets top="5.0" />
+                           </GridPane.margin>
+                        </Text>
+                        <Text fx:id="movie9" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="115.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Text>
+                        <Text fx:id="movie10" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="115.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Text>
+                     </children>
+                  </GridPane>
+                  <GridPane layoutX="54.0" layoutY="80.0" prefHeight="245.0" prefWidth="650.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="203.0" minHeight="10.0" prefHeight="200.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="132.0" minHeight="0.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Pane maxWidth="-Infinity" prefHeight="200.0" prefWidth="125.0" style="-fx-border-color: #ffffff; -fx-border-width: 0.1; -fx-border-radius: 5;" />
+                        <Pane maxWidth="-Infinity" prefHeight="200.0" prefWidth="125.0" style="-fx-border-color: #ffffff; -fx-border-width: 0.1; -fx-border-radius: 5;" GridPane.columnIndex="1" />
+                        <Pane maxWidth="-Infinity" prefHeight="200.0" prefWidth="125.0" style="-fx-border-color: #ffffff; -fx-border-width: 0.1; -fx-border-radius: 5;" GridPane.columnIndex="2" />
+                        <Pane maxWidth="-Infinity" prefHeight="200.0" prefWidth="125.0" style="-fx-border-color: #ffffff; -fx-border-width: 0.1; -fx-border-radius: 5;" GridPane.columnIndex="3" />
+                        <Pane maxWidth="-Infinity" prefHeight="200.0" prefWidth="125.0" style="-fx-border-color: #ffffff; -fx-border-width: 0.1; -fx-border-radius: 5;" GridPane.columnIndex="4" />
+                        <ImageView fx:id="firstPoster" fitHeight="200.0" fitWidth="125.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></ImageView>
+                        <ImageView fx:id="secondPoster" fitHeight="200.0" fitWidth="125.0" GridPane.columnIndex="1">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></ImageView>
+                        <ImageView fx:id="thirdPoster" fitHeight="200.0" fitWidth="125.0" GridPane.columnIndex="2">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></ImageView>
+                        <ImageView fx:id="fourthPoster" fitHeight="200.0" fitWidth="125.0" GridPane.columnIndex="3">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></ImageView>
+                        <ImageView fx:id="fifthPoster" fitHeight="200.0" fitWidth="125.0" GridPane.columnIndex="4">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></ImageView>
+                        <Text fx:id="movie1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="115.0" GridPane.rowIndex="1" />
+                        <Text fx:id="movie2" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="115.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Text fx:id="movie3" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="115.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Text fx:id="movie4" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="115.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Text fx:id="movie5" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="115.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <Label layoutX="60.0" layoutY="42.0" text="Movies" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Label>
+               </children>
+            </Pane>
+         </AnchorPane>
+      </ScrollPane>
+      <Pane prefHeight="48.0" prefWidth="768.0" style="-fx-background-color: #a41212;">
+         <children>
+            <Hyperlink fx:id="logoLink" alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="9.0" onMouseClicked="#openHome" style="-: ;" text="Logo" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="moviesAndTrailersLink" layoutX="77.0" layoutY="11.0" prefHeight="26.0" prefWidth="159.0" text="Movies &amp; Trailers" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="reservationsLink" layoutX="219.0" layoutY="11.0" onMouseClicked="#openMyReservations" prefHeight="26.0" prefWidth="120.0" text="My Reservations" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="logoutLink" layoutX="634.0" layoutY="14.0" onMouseClicked="#logout" prefHeight="21.0" prefWidth="44.0" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="myAccountLink" layoutX="678.0" layoutY="13.0" onMouseClicked="#openAccount" prefHeight="17.0" prefWidth="76.0" text="My Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Hyperlink>
+            <Pane fx:id="currentPage" layoutX="64.0" layoutY="46.0" opacity="0.75" prefHeight="2.0" prefWidth="146.0" style="-fx-background-color: #ffffff; visibility: true;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

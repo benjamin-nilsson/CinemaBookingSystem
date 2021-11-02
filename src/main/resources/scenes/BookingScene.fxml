@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="450.0" prefWidth="768.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinemabookingsystem.controllers.BookingController">
+    <children>
+        <ScrollPane layoutX="-1.0" layoutY="47.0" prefHeight="403.0" prefWidth="768.0" style="-fx-background-color: #000000;">
+            <content>
+                <AnchorPane prefHeight="501.0" prefWidth="754.0" style="-fx-background-color: #000000;">
+                    <children>
+                        <GridPane fx:id="seats" layoutX="93.0" layoutY="278.0" prefHeight="135.0" prefWidth="259.0">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <FontAwesomeIconView fx:id="A3" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="3" />
+                                <FontAwesomeIconView fx:id="A6" fill="#1010e4" glyphName="SQUARE" size="20" GridPane.columnIndex="6" />
+                                <FontAwesomeIconView fx:id="A8" fill="#1010e4" glyphName="SQUARE" size="20" GridPane.columnIndex="8" />
+                                <FontAwesomeIconView fx:id="B1" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.rowIndex="1" />
+                                <FontAwesomeIconView fx:id="B5" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                <FontAwesomeIconView fx:id="B3" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                <FontAwesomeIconView fx:id="B8" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                                <FontAwesomeIconView fx:id="A1" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="1" />
+                                <FontAwesomeIconView fx:id="A2" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="2" />
+                                <FontAwesomeIconView fx:id="A5" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="5" />
+                                <FontAwesomeIconView fx:id="A4" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="4" />
+                                <FontAwesomeIconView fx:id="A7" fill="#1010e4" glyphName="SQUARE" size="20" GridPane.columnIndex="7" />
+                                <FontAwesomeIconView fx:id="B2" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <FontAwesomeIconView fx:id="B4" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                <FontAwesomeIconView fx:id="B6" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                                <FontAwesomeIconView fx:id="B7" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                                <FontAwesomeIconView fx:id="B9" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                                <FontAwesomeIconView fx:id="B10" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+                                <FontAwesomeIconView fx:id="C1" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.rowIndex="2" />
+                                <FontAwesomeIconView fx:id="C2" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                <FontAwesomeIconView fx:id="C3" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                <FontAwesomeIconView fx:id="C4" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                <FontAwesomeIconView fx:id="C5" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                <FontAwesomeIconView fx:id="C6" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                                <FontAwesomeIconView fx:id="C7" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                                <FontAwesomeIconView fx:id="C8" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                                <FontAwesomeIconView fx:id="C9" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                                <FontAwesomeIconView fx:id="C10" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+                                <FontAwesomeIconView fx:id="D1" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.rowIndex="3" />
+                                <FontAwesomeIconView fx:id="D2" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                <FontAwesomeIconView fx:id="D3" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                <FontAwesomeIconView fx:id="D4" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                <FontAwesomeIconView fx:id="D5" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                <FontAwesomeIconView fx:id="D6" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                                <FontAwesomeIconView fx:id="D7" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                                <FontAwesomeIconView fx:id="D8" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                                <FontAwesomeIconView fx:id="D9" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                                <FontAwesomeIconView fx:id="D10" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+                                <FontAwesomeIconView fx:id="E1" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.rowIndex="4" />
+                                <FontAwesomeIconView fx:id="E2" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                <FontAwesomeIconView fx:id="E3" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                <FontAwesomeIconView fx:id="E4" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                <FontAwesomeIconView fx:id="E5" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                                <FontAwesomeIconView fx:id="E6" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                                <FontAwesomeIconView fx:id="E7" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                                <FontAwesomeIconView fx:id="E8" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                                <FontAwesomeIconView fx:id="E9" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                                <FontAwesomeIconView fx:id="E10" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+                            </children>
+                        </GridPane>
+                        <ImageView fitHeight="88.0" fitWidth="271.0" layoutX="87.0" layoutY="146.0">
+                            <image>
+                                <Image url="@../imagesandtrailers/cinemaScreen.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="94.0" fitWidth="18.0" layoutX="87.0" layoutY="143.0">
+                            <image>
+                                <Image url="@../imagesandtrailers/cinemaCurtainLeft.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="94.0" fitWidth="18.0" layoutX="340.0" layoutY="143.0">
+                            <image>
+                                <Image url="@../imagesandtrailers/cinemaCurtainRight.png" />
+                            </image>
+                        </ImageView>
+                        <Pane layoutX="74.0" layoutY="44.0" prefHeight="60.0" prefWidth="62.0">
+                            <children>
+                                <Circle fx:id="minusCircleIcon" fill="#7c7272" layoutX="31.0" layoutY="30.0" onMouseClicked="#decreaseSeats" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor></Circle>
+                                <FontAwesomeIconView fx:id="minusIcon" fill="WHITE" glyphName="MINUS" layoutX="25.0" layoutY="35.0" onMouseClicked="#decreaseSeats" size="15">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor></FontAwesomeIconView>
+                            </children>
+                        </Pane>
+                        <Pane layoutX="156.0" layoutY="44.0" prefHeight="60.0" prefWidth="62.0">
+                            <children>
+                                <Circle fx:id="plusCircleIcon" fill="#7c7272" layoutX="31.0" layoutY="30.0" onMouseClicked="#increaseSeats" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor></Circle>
+                                <FontAwesomeIconView fx:id="plusIcon" fill="WHITE" glyphName="PLUS" layoutX="25.0" layoutY="35.0" onMouseClicked="#increaseSeats" size="15">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor></FontAwesomeIconView>
+                            </children>
+                        </Pane>
+                        <GridPane layoutX="78.0" layoutY="426.0" prefHeight="61.0" prefWidth="290.0">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <FontAwesomeIconView fx:id="A21" fill="WHITE" glyphName="SQUARE" size="20" />
+                                <FontAwesomeIconView fx:id="A214" fill="#1e1c1c" glyphName="SQUARE" size="20" GridPane.columnIndex="1" />
+                                <FontAwesomeIconView fx:id="A213" fill="#7c7272" glyphName="SQUARE" size="20" GridPane.columnIndex="2" />
+                                <FontAwesomeIconView fx:id="A212" fill="#1010e4" glyphName="SQUARE" size="20" GridPane.columnIndex="3" />
+                                <FontAwesomeIconView fx:id="A211" fill="#5e0d8a" glyphName="SQUARE" size="20" GridPane.columnIndex="4" />
+                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected" GridPane.rowIndex="1" />
+                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Reserved" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Available" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Wheelchair" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Couch" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                            </children>
+                        </GridPane>
+                        <Text fx:id="chosenSeatText" fill="WHITE" layoutX="162.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" textAlignment="CENTER" wrappingWidth="120.00000090152025">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font></Text>
+                        <Text fx:id="numberOfPeopleText" fill="WHITE" layoutX="134.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" wrappingWidth="22.13671875">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font></Text>
+                        <Text fill="WHITE" layoutX="80.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select number of seats">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="80.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select seats">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <Pane layoutY="-1.0" prefHeight="48.0" prefWidth="768.0" style="-fx-background-color: #a41212;">
+            <children>
+                <Hyperlink fx:id="logoLink" alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="9.0" onMouseClicked="#openHome" text="Logo" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Hyperlink>
+                <Hyperlink fx:id="moviesAndTrailersLink" layoutX="77.0" layoutY="11.0" onMouseClicked="#openMovies" prefHeight="26.0" prefWidth="159.0" text="Movies &amp; Trailers" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Hyperlink>
+                <Hyperlink fx:id="reservationsLink" layoutX="219.0" layoutY="11.0" onMouseClicked="#openMyReservations" prefHeight="26.0" prefWidth="120.0" text="My Resevations" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Hyperlink>
+                <Hyperlink fx:id="logoutLink" layoutX="634.0" layoutY="14.0" onMouseClicked="#logout" prefHeight="21.0" prefWidth="44.0" text="Logout" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="10.0" />
+                    </font>
+                </Hyperlink>
+                <Hyperlink fx:id="myAccountLink" layoutX="678.0" layoutY="13.0" onMouseClicked="#openAccount" prefHeight="17.0" prefWidth="76.0" text="My Account" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Hyperlink>
+            </children>
+        </Pane>
+        <AnchorPane layoutX="420.0" layoutY="47.0" prefHeight="389.0" prefWidth="333.0">
+            <children>
+                <ImageView fx:id="moviePoster" fitHeight="193.0" fitWidth="128.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                <Text fx:id="movieTitleText" fill="WHITE" layoutX="20.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Text>
+                <Text layoutX="14.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                <Text fx:id="dateText" fill="WHITE" layoutX="24.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="120.00000090152025">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <Text fx:id="numberOfSeats" fill="WHITE" layoutX="21.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Text>
+                <Text fx:id="costText" fill="WHITE" layoutX="300.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2$" textAlignment="RIGHT">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Text>
+                <Separator layoutX="19.0" layoutY="278.0" opacity="0.3" prefHeight="3.0" prefWidth="298.0" />
+                <Separator layoutX="19.0" layoutY="312.0" opacity="0.3" prefHeight="3.0" prefWidth="298.0" />
+                <Button fx:id="reserveButton" layoutX="259.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#reserve" style="-fx-background-color: #a41212;" text="Reserve" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                    <effect>
+                        <Glow />
+                    </effect>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

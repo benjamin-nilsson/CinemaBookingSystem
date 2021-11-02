@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="450.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cinemabookingsystem.controllers.TrailerController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="450.0" fitWidth="768.0" onMouseClicked="#pauseAndPlay" onMouseEntered="#showToolBar" onMouseExited="#hideToolBar" preserveRatio="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <viewport>
+            <Rectangle2D minX="542.0" minY="325.0" />
+         </viewport>
+      </MediaView>
+      <GridPane fx:id="toolBar" layoutY="410.0" onMouseEntered="#showToolBar" onMouseExited="#hideToolBar" prefHeight="26.0" prefWidth="768.0" style="visibility: true;">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="110.0" minWidth="10.0" prefWidth="43.333343505859375" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="228.33331298828125" minWidth="10.0" prefWidth="104.66665649414062" />
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="479.0" minWidth="10.0" prefWidth="479.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+         <padding>
+            <Insets bottom="7.0" />
+         </padding>
+         <children>
+            <Slider fx:id="volumeSlider" prefHeight="19.0" prefWidth="125.0" GridPane.columnIndex="1">
+               <effect>
+                  <ColorAdjust saturation="1.0" />
+               </effect>
+            </Slider>
+            <ImageView fx:id="playAndPauseButton" fitHeight="33.0" fitWidth="45.0" nodeOrientation="INHERIT" onMouseClicked="#pauseAndPlay" onMouseDragExited="#pauseAndPlay" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagesandtrailers/pause.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="playTime" prefHeight="17.0" prefWidth="63.0" textFill="#ffffff" GridPane.columnIndex="2">
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Label>
+         </children>
+      </GridPane>
+      <ImageView fx:id="exitTrailerButton" fitHeight="36.0" fitWidth="27.0" layoutX="741.0" onMouseClicked="#closeTrailer" pickOnBounds="true" preserveRatio="true" style="visibility: false;">
+         <image>
+            <Image url="@../imagesandtrailers/closeTrailerButton.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Slider fx:id="timeSlider" layoutY="383.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#showToolBar" onMouseExited="#hideToolBar" prefHeight="21.0" prefWidth="768.0">
+         <effect>
+            <ColorAdjust saturation="1.0" />
+         </effect>
+      </Slider>
+   </children>
+</AnchorPane>
