@@ -2,9 +2,12 @@
 This "Cinema Booking System" allows a user to look through a cinemas showings to select and book tickets for a showing of a movie.
 
 # Technologies
-  • JavaFx
+  • JavaFx 
+  
   • MYSQL
+  
   • Gradle
+  
   • OMDB API
   
 ![Cinema Booking System Login](https://user-images.githubusercontent.com/80653191/157412623-bfe5fd0a-8977-462c-884b-c15ab5933060.png)
